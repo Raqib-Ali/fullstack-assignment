@@ -50,6 +50,8 @@ Create a .env file inside the backend/ folder:
 ```bash
 MONGO_URI=YOUR_MONGO_URI
 PORT=8080
+MONGO_URI=YOUR_MONGO_URI
+PORT=PORT_OF_YOUR_CHOICE
 ```
 
 ### 4. Run Project
