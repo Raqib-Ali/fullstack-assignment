@@ -1,12 +1,17 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import cors from "cors"
 import configRoutes from "./routes/configuration.routes.js"
 import errorHandler from "./middleware/errorHandler.js";
 
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+// cors enabled
+app.use(cors());
 
 // Routes
 app.use("/api/configurations", configRoutes);
