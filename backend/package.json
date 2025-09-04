@@ -1,14 +1,16 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Raqib Ali",
   "license": "ISC",
-  "description": "",
+  "description": "Frontend part of fullstack assignment",
   "dependencies": {
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
