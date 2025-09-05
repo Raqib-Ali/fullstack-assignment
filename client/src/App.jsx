@@ -8,24 +8,26 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <div style={{ padding: "10px" }}>
+        <BrowserRouter>
 
-        <div>
-          <nav style={{
-            display: "flex",
-            justifyContent: "space-between"
-          }}>
-            <Link style={{ fontSize: "20px" }} to="/">Fetch Config</Link>
-            <Link style={{ fontSize: "20px" }} to="/update">Update Remark</Link>
-          </nav>
-        </div>
+          <div>
+            <nav style={{
+              display: "flex",
+              justifyContent: "space-between"
+            }}>
+              <Link style={{ fontSize: "20px" }} to="/">Fetch Config</Link>
+              <Link style={{ fontSize: "20px" }} to="/update">Update Remark</Link>
+            </nav>
+          </div>
 
-        <Routes>
-          <Route path='/' element={<FetchConfigPage />}></Route>
-          <Route path='/update' element={<UpdateConfigPage />} />
-        </Routes>
+          <Routes>
+            <Route path='/' element={<FetchConfigPage />}></Route>
+            <Route path='/update' element={<UpdateConfigPage />} />
+          </Routes>
 
-      </BrowserRouter>
+        </BrowserRouter>
+      </div>
     </>
   )
 }
